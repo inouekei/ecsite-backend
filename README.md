@@ -23,7 +23,7 @@ https://github.com/inouekei/ecsite-frontend/
 - 購入履歴一覧取得
 
 ## 使用技術（実行環境）
-- JavaScript(Nuxt.js)、VeeValidate、Auth、Persisted state
+- Laravel　8.x、MySQL、JWT
 
 ## テーブル設計
 ![table](https://user-images.githubusercontent.com/108909962/185005814-df48e2aa-6239-4fce-aa91-ca09e1e1793f.png)
@@ -32,6 +32,8 @@ https://github.com/inouekei/ecsite-frontend/
 ![index drawio](https://user-images.githubusercontent.com/108909962/185008012-eb9f4043-cb44-4205-9434-0e8f47215fbc.png)
 
 ## 環境構築
-- バックエンドを構築する
-- フロントエンドのトップでyarn devとコマンド入力して、表示されたアドレスにブラウザでアクセスする
-- /authでユーザー登録を行った後にログインする必要がある
+- MySQLでecsitedbを作成する
+- バックエンドのトップにある設定ファイル.envのユーザー名、パスワードの箇所に、自分の環境にあったものを設定する
+- MySQLを立ち上げてから、シーディングを行う
+- トップでphp artisan serveとコマンド入力する
+- フロントエンドを構築する
